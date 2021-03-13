@@ -117,7 +117,7 @@ public:
 			if (m_ptr == nullptr) throw Exception("trying to decrement an empty iterator");
 			if (m_ptr->next == nullptr) throw Exception("the decrement leads to out of bounds");
 
-			m_ptr = m_ptr->nextr;
+			m_ptr = m_ptr->next;
 			return * this;
 		}
 
